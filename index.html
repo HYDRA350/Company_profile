@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Persatu One | Cocoa & Coffee Exporter</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark py-3">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="assets/img/logo.svg" alt="Persatu Logo"></a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#products" class="nav-link">Products</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+          <li class="nav-item">
+            <button id="themeToggle" class="btn btn-outline-light btn-sm">🌙</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero text-center text-white d-flex align-items-center justify-content-center">
+    <div data-aos="zoom-in" data-aos-duration="1000">
+      <h1 class="fw-bold">World’s Leading Cocoa Powder Manufacturer</h1>
+      <p class="lead mt-3">From Indonesia to the World — Quality, Sustainability, and Excellence.</p>
+      <a href="#products" class="btn btn-danger btn-lg mt-4">Explore More</a>
+    </div>
+  </section>
+
+  <!-- About (Who We Are + Factory) -->
+  <section id="about" class="container my-5" data-aos="fade-up">
+    <div class="text-center mb-4">
+      <h2 class="fw-bold text-danger">Who We Are?</h2>
+      <p class="text-muted mt-3">
+        <strong>A Global Cocoa Powder and Coffee Manufacturer based in Indonesia</strong><br>
+        Persatu.one Group (PT. Persatuone Komoditas Indonesia) is a family company and manufacturer, 
+        aiming to unite the diversity of Indonesian commodities into high-value products & brands. 
+        Founded in 2000, we started our cocoa and coffee factory in West Java to spread this blessing 
+        to the world!
+      </p>
+    </div>
+
+    <div class="row align-items-center my-5">
+      <div class="col-md-8" data-aos="fade-right">
+        <div class="p-4 rounded-4" style="background:#b40000; color:white;">
+          <h5 class="fw-semibold">Persatu.one Cocoa Factory</h5>
+          <p class="small">
+            Located in <b>West Java, Indonesia</b>, we focus on <b>COCOA POWDER production</b>. 
+            With a production capacity up to <b>800 metric tons/month</b>, 
+            we supply Alkalized Cocoa Powder, Natural Cocoa Powder, 
+            and Hot Chocolate Mix for your business.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-left">
+        <img src="assets/img/download (14) 1.png" class="img-fluid rounded-4 shadow" alt="Factory Image">
+      </div>
+    </div>
+
+    <div class="row align-items-center mt-4">
+      <div class="col-md-4" data-aos="fade-right">
+        <img src="assets/img/Coffee Beans for sale in a little Parisian Shop.jpg" class="img-fluid rounded-4 shadow" alt="Coffee Factory">
+      </div>
+      <div id="Location" class="col-md-8" data-aos="fade-left">
+        <div class="p-4 rounded-4 bg-light">
+          <h5 class="text-danger fw-semibold">Persatu.one Coffee Factory</h5>
+          <p class="small">
+            Located in <b>Banten, Indonesia</b>, we produce Arabica and Robusta roasted coffee beans 
+            from more than 20 origins worldwide. We also produce instant coffee, supply green beans, 
+            and help coffee shops around the world get the best coffee from Indonesia!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Facilities -->
+  <section id="facilities" class="text-white text-center py-5" 
+    style="background:url('assets/img/Discover\ the\ secrets\ to\ launching\ a\ successful….jpg') center/cover no-repeat;">
+    <div class="container" data-aos="fade-up">
+      <h2 class="fw-bold mb-4">Our Facilities</h2>
+      <p class="lead mb-5">
+        All our factory facilities are dedicated to ensuring the satisfaction of our customers worldwide.
+      </p>
+
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="p-4 bg-dark bg-opacity-75 rounded-4 h-100">
+            <h3>🢁</h3>
+            <p class="fw-semibold">High level of sanitary conditions are maintained throughout the facility.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="p-4 rounded-4 h-100" style="background:rgba(200,0,0,0.7);">
+            <h3>🏭</h3>
+            <p class="fw-semibold">A well-trained and experienced team in production & export shipment.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="p-4 bg-dark bg-opacity-75 rounded-4 h-100">
+            <h3>🌿</h3>
+            <p class="fw-semibold">Using green energy and eco-friendly practices.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="p-4 bg-dark bg-opacity-75 rounded-4 h-100">
+            <h3>🤝</h3>
+            <p class="fw-semibold">Collaboration with Coffee and Cocoa Farmers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="container my-5" data-aos="fade-up">
+    <h2 class="text-center fw-bold text-danger mb-5">Our Products</h2>
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="fade-right">
+        <div class="card product-card p-3 text-center">
+          <img src="assets/img/download (12) 1.png" class="card-img-top rounded-3" alt="Cocoa Powder">
+          <h5 class="mt-3 fw-semibold">Cocoa Powder</h5>
+          <p>Premium cocoa powder with rich aroma and taste.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up">
+        <div class="card product-card p-3 text-center">
+          <img src="assets/img/Sss.png" class="card-img-top rounded-3" alt="Coffee Beans">
+          <h5 class="mt-3 fw-semibold">Coffee Beans</h5>
+          <p>High-quality coffee beans roasted to perfection.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-left">
+        <div class="card product-card p-3 text-center">
+          <img src="assets/img/download (13) 1.png" class="card-img-top rounded-3" alt="Chocolate Drink">
+          <h5 class="mt-3 fw-semibold">Chocolate Drink</h5>
+          <p>Delicious instant chocolate drink loved worldwide.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact-section container text-center" data-aos="fade-up">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-start">
+        <h3 class="fw-bold">Be Our Distributor in Your Country</h3>
+        <p>Please contact us to know more about our products and samples.</p>
+        <p>📞 +62 821 2227 9540</p>
+        <p>📧 sales@persatu.one | sales@cartenzcocoa.com</p>
+        <p>🏠 Ruko North Sorrento Square, Pagedangan, Tangerang, Indonesia</p>
+      </div>
+      <div class="col-md-6">
+        <form>
+          <div class="row g-2">
+            <div class="col-md-6"><input type="text" class="form-control" placeholder="Your Name"></div>
+            <div class="col-md-6"><input type="email" class="form-control" placeholder="Your Email"></div>
+            <div class="col-md-6"><input type="text" class="form-control" placeholder="Phone Number"></div>
+            <div class="col-md-6"><input type="text" class="form-control" placeholder="Subject"></div>
+            <div class="col-12"><textarea class="form-control" rows="3" placeholder="Write message here..."></textarea></div>
+          </div>
+          <button type="submit" class="btn btn-contact mt-3">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center text-md-start">
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <img src="assets/img/logo.svg" alt="Logo" width="120">
+        </div>
+        <div class="col-md-3 mb-3">
+          <h6>About us</h6>
+          <ul class="list-unstyled small">
+            <li>Who we are</li>
+            <li>Factory</li>
+            <li>Our facilities</li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h6>Products</h6>
+          <ul class="list-unstyled small">
+            <li>Cocoa</li>
+            <li>Coffee</li>
+            <li>Chocolate</li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h6>Socials</h6>
+          <p>• Facebook: Persatu_One_official</p>
+          <p>• Instagram: Persatu_One</p>
+          <p>•  X: Persatu_supplier</p>
+        </div>
+      </div>
+      <div class="text-center mt-4 small">© 2025 Persatu One Indonesia. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

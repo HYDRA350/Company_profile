@@ -1,0 +1,157 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #200000;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #ff5a5a !important;
+}
+
+/* Hero Section */
+.hero {
+  background: url('../img/Raw cacao beans and cocoa powder _ Premium Photo.jpg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-attachment: fixed;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+/* About Section */
+.about-section {
+  padding: 80px 0;
+}
+
+/* === Our Facilities Section (revisi smooth hover) === */
+#facilities {
+  position: relative;
+  background-attachment: fixed;
+}
+
+#facilities::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#facilities .container {
+  position: relative;
+  z-index: 2;
+}
+
+#facilities .row > div {
+  transition: all 0.5s ease;
+  border-radius: 20px; /* biar glow-nya ikut membulat */
+}
+
+#facilities .row > div:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 45px 15px rgba(255, 50, 50, 0.35); /* glow menyebar lembut */
+  border-radius: 20px;
+  transition: all 0.6s ease-in-out; /* efek transisi lebih halus */
+}
+
+
+/* Products */
+.product-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+/* Contact */
+.contact-section {
+  background-color: #d63031;
+  color: white;
+  padding: 60px;
+  border-radius: 20px;
+}
+
+.contact-section input,
+.contact-section textarea {
+  border-radius: 10px;
+  border: none;
+  padding: 12px;
+}
+
+.btn-contact {
+  background-color: #5c0202;
+  color: white;
+  border-radius: 12px;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+
+.btn-contact:hover {
+  background-color: #7a0909;
+}
+
+/* Footer */
+footer {
+  background-color: #160101;
+  color: #ccc;
+  padding: 60px 0 30px;
+}
+
+footer h6 {
+  color: white;
+  font-weight: 600;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #111;
+  color: #eee;
+}
+
+body.dark-mode .navbar {
+  background-color: #000;
+}
+
+body.dark-mode footer {
+  background-color: #050505;
+  color: #aaa;
+}
+
+body.dark-mode .product-card {
+  background-color: #222;
+  color: #fff;
+}
+
+body.dark-mode .contact-section {
+  background-color: #520000;
+}
+
+body.dark-mode #facilities::before {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+body.dark-mode #facilities .row > div:hover {
+  box-shadow: 0 0 25px rgba(255, 80, 80, 0.7);
+}
+
+/* === FIX: Keep About section text black even in dark mode === */
+body.dark-mode #about,
+body.dark-mode #about p,
+body.dark-mode #about h2,
+body.dark-mode #about h3 {
+  color: #000 !important; /* tetap hitam walau dark mode aktif */
+}
